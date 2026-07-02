@@ -9,9 +9,9 @@ namespace FitTrack.Domain.Entities
     {
         public int Id {get; set;}
         public int WorkoutId {get; set;}
-        public required Workout Workout {get; set;}
+        public Workout Workout {get; set;} = null!;
         public int ExerciseId {get; set;}
-        public required Exercise Exercise {get; set;}
+        public Exercise Exercise {get; set;} = null!;
         public int Sets {get; set;}
         public int Reps {get; set;}
         public decimal Weight {get; set;}

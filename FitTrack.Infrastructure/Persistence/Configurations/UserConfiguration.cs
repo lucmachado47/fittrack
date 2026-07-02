@@ -34,6 +34,7 @@ namespace FitTrack.Infrastructure.Persistence.Configurations
             .IsRequired();
 
         builder.Property(u => u.Goal)
+            .IsRequired()
             .HasMaxLength(255);
 
         builder.Property(u => u.Role)

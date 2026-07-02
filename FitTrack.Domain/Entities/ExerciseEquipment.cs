@@ -7,11 +7,10 @@ namespace FitTrack.Domain.Entities
 {
     public class ExerciseEquipment
     {
-        public int Id {get; set;}
         public int ExerciseId {get; set;}
-        public required Exercise Exercise {get; set;}
+        public Exercise Exercise {get; set;} = null!;
         public int EquipmentId {get; set;}
-        public required Equipment Equipment {get; set;}
+        public Equipment Equipment {get; set;} = null!;
         
     }
 }

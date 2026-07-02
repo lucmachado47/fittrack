@@ -73,9 +73,6 @@ namespace FitTrack.Infrastructure.Migrations
                     b.Property<int>("EquipmentId")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Id")
-                        .HasColumnType("INTEGER");
-
                     b.HasKey("ExerciseId", "EquipmentId");
 
                     b.HasIndex("EquipmentId");

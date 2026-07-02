@@ -127,8 +127,7 @@ namespace FitTrack.Infrastructure.Migrations
                 columns: table => new
                 {
                     ExerciseId = table.Column<int>(type: "INTEGER", nullable: false),
-                    EquipmentId = table.Column<int>(type: "INTEGER", nullable: false),
-                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                    EquipmentId = table.Column<int>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>
                 {

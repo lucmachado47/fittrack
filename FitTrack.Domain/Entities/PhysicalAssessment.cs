@@ -9,7 +9,7 @@ namespace FitTrack.Domain.Entities
     {
         public int Id {get; set;}
         public int StudentId {get; set;}
-        public required User Student {get; set;}
+        public User Student {get; set;} = null!;
         public decimal Weight {get; set;}
         public decimal Height {get; set;}
         public decimal BodyFat {get; set;}

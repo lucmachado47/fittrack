@@ -17,6 +17,7 @@ public class WorkoutHistoryConfiguration : IEntityTypeConfiguration<WorkoutHisto
             .IsRequired();
 
         builder.Property(wh => wh.Observations)
+            .IsRequired()
             .HasMaxLength(1000);
 
         builder.Property(wh => wh.Duration)

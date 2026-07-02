@@ -9,11 +9,11 @@ namespace FitTrack.Domain.Entities
     {
         public int Id {get; set;}
         public int SetById {get; set;}
-        public required User SetBy {get; set;}
+        public User SetBy {get; set;} = null!;
         public int StudentId {get; set;}
-        public required User Student {get; set;}
+        public User Student {get; set;} = null!;
         public int WorkoutId {get; set;}
-        public required Workout Workout {get; set;}
+        public Workout Workout {get; set;} = null!;
         public DateTime AssignedAt {get; set;}
         public ICollection<WorkoutHistory> WorkoutHistories {get; set;} = [];
     }

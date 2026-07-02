@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FitTrack.Infrastructure.Migrations
 {
     [DbContext(typeof(FitTrackDbContext))]
-    [Migration("20260628222944_InitialCreate")]
+    [Migration("20260702231625_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -74,9 +74,6 @@ namespace FitTrack.Infrastructure.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<int>("EquipmentId")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int>("Id")
                         .HasColumnType("INTEGER");
 
                     b.HasKey("ExerciseId", "EquipmentId");

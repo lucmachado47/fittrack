@@ -11,7 +11,7 @@ namespace FitTrack.Domain.Entities
         public required string Name {get; set;}
         public required string Description {get; set;}
         public int MuscleGroupId {get; set;}
-        public required MuscleGroup MuscleGroup {get; set;}
+        public MuscleGroup MuscleGroup {get; set;} = null!;
         public ICollection<WorkoutItem> WorkoutItems {get; set;} = [];
         public ICollection<ExerciseEquipment> ExerciseEquipments {get; set;} = [];
     }
